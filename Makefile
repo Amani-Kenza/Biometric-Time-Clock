@@ -3,10 +3,10 @@ build:
 docker build . -t myappimage:v1
 #Run the image as a container
 run:
-docker run -dp 3000:80 myappimage:v1
+docker run -dp 8081:80 myappimage:v1
 #Ping the appliction
 curl:
-curl localhost:3000
+curl localhost:8081
 #Stop the cntainer following by container id
 stop:
 docker stop $(docker ps -q)
