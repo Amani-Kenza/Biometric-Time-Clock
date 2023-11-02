@@ -3,7 +3,7 @@ build:
 docker build . -t myappimage:v1
 #Run the image as a container
 run:
-docker run -dp 8080:80 myappimage:v1
+docker run -dp 3000:80 myappimage:v1
 #Ping the appliction
 curl:
 curl localhost:3000
